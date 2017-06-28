@@ -1,0 +1,32 @@
+﻿<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+      Add/edit event
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-line>
+        <ion-item>
+          <ion-label>Event Name</ion-label>
+          <ion-input type="text" placeholder=" "></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Owner</ion-label>
+          <ion-input type="text" placeholder=" "></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Date</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label>Venue</ion-label>
+          <ion-input type="text" placeholder=" "></ion-input>
+        </ion-item>
+        <button ion-button>Add/Edit</button>
+        <p>OR</p>
+        <button ion-button clear>Cancel</button>
+          
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
